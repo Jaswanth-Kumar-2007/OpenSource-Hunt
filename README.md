@@ -25,7 +25,7 @@ The community focuses on building real projects, learning together, and contribu
 Explore OpenLake:
 
 * 🌐 Website: https://opene.in/
-* 💻 GitHub: https://git.com/OpenLake
+* 💻 GitHub: https://github.com/OpenLake
 * 📸 Instagram: https://www.instagram.com/openlake_iitbhilai/
 
 ---
