@@ -16,7 +16,7 @@ Your mission:
 
 ---
 
-## 🌊 About Opeake
+## 🌊 About OpenLake
 
 **OpenLake** is IIT Bhilai's hub for Open Source innovation and collaborative development.
 
