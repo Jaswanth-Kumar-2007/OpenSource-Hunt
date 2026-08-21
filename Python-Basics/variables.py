@@ -14,7 +14,7 @@ print("Student Name:", student_name)
 print("Student Age:", student_age)
 print("Student City:", student_city)
 
-is_student = None
+is_student = True
 
 print("Is Student:", is_student)
 
