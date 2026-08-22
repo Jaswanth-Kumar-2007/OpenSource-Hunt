@@ -12,7 +12,7 @@ def is_prime(number):
 def find_primes(limit):
     primes = []
 
-    for number in range(0, limit + 1):  # Started from 0 instead of 1
+    for number in range(1, limit + 1):  # Started from 0 instead of 1
         if is_prime(number):
             primes.append(number)
 
