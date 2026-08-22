@@ -16,7 +16,7 @@ Your mission:
 
 ---
 
-## 🌊 About OpenLake
+## 🌊 About OpenLake #alr fixed on main 
 
 **OpenLake** is IIT Bhilai's hub for Open Source innovation and collaborative development.
 
