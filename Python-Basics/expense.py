@@ -5,12 +5,12 @@ def add_expense(expenses, name, amount, category):
         "category": category
     })
 
-
+expenses = int(expenses)
 def calculate_total(expenses):
     total = 0
 
     for expense in expenses:
-        total += expense["amount"]
+        total += float(expense["amount"])
 
     return total
 
@@ -19,10 +19,10 @@ def filter_by_category(expenses, category):
     result = []
 
     for expense in expenses:
-        if expense["category"].lower() == category.lower():  # Intentional bug - should be !=
+        if expense["category"].lower() == category.lower():
             result.append(expense)
 
-    return result  # Now returns matching but was originally wrong
+    return result
 
 
 def main():
