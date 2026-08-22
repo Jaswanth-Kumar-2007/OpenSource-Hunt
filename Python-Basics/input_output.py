@@ -8,6 +8,6 @@ print("You live in:", age)
 print("Your city is:", name)
 
 country = "India"
-print("Your country is:", city)
+print("Your country is:", country)
 
 print("Next year your age will be:", age + 1)  # String concatenation crash
