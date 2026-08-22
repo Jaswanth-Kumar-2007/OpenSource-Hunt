@@ -3,9 +3,9 @@ marks = 85
 temperature = 30
 
 if age >= 18:
-    print("You are a child")
-else:
     print("You are an adult")
+else:
+    print("You are a child")
 
 if marks >= 90:
     print("Grade B")
