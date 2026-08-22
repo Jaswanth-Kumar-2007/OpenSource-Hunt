@@ -33,50 +33,54 @@ let currentFilter = "all";
 async function fetchAllPullRequests() {
 
     let allPRs = [];
-
     let page = 1;
-
     const perPage = 100;
-
 
     while (true) {
 
-        const response = await fetch(
-            `${API_URL}/pulls?state=all&sort=created&direction=desc&per_page=${perPage}&page=${page}`
-        );
+        const url =
+            `${API_URL}/pulls?state=all&sort=created&direction=desc&per_page=${perPage}&page=${page}`;
 
+        const response = await fetch(url);
+
+        // Read the response even when GitHub returns an error
+        const data = await response.json();
 
         if (!response.ok) {
 
-            throw new Error(
-                "Failed to fetch pull requests."
-            );
+            console.error("GitHub API Error:", {
+                status: response.status,
+                statusText: response.statusText,
+                data: data
+            });
 
+            throw new Error(
+                `GitHub API Error ${response.status}: ${
+                    data.message || response.statusText
+                }`
+            );
         }
 
+        allPRs.push(...data);
 
-        const prs = await response.json();
+        console.log(
+            `Loaded PR page ${page}: ${data.length} PRs`
+        );
 
-
-        allPRs.push(...prs);
-
-
-        // If less than 100 were returned,
-        // there are no more pages.
-
-        if (prs.length < perPage) {
+        // Less than 100 means this is the last page
+        if (data.length < perPage) {
             break;
         }
 
-
         page++;
-
     }
 
+    console.log(
+        `Total PRs loaded: ${allPRs.length}`
+    );
 
     return allPRs;
 }
-
 
 // ======================================================
 // FETCH ALL COMMITS OF A PR
@@ -138,39 +142,36 @@ async function loadData() {
 
         loading.classList.remove("hidden");
 
+        errorBox.classList.add("hidden");
 
-        pullRequests =
-            await fetchAllPullRequests();
-
-
-        console.log(
-            `Loaded ${pullRequests.length} PRs`
-        );
-
+        pullRequests = await fetchAllPullRequests();
 
         loading.classList.add("hidden");
 
-
         updateCount();
-
 
         displayPullRequests();
 
-
         await generateLeaderboard();
-
 
     } catch (error) {
 
         loading.classList.add("hidden");
 
-        errorBox.textContent =
-            error.message;
+        console.error(error);
+
+        errorBox.innerHTML = `
+            <strong>Failed to fetch pull requests.</strong>
+            <br><br>
+            ${escapeHTML(error.message)}
+            <br><br>
+            Open your browser console with
+            <strong>F12 → Console</strong>
+            for more details.
+        `;
 
         errorBox.classList.remove("hidden");
-
     }
-
 }
 
 
