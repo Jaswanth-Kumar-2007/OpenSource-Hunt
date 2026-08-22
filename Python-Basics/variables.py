@@ -18,6 +18,6 @@ print("Student City:", student_city)
 
 print("Is Student:", is_student)
 
-score = 150
+score = 100
 
 print("Score:", score)
