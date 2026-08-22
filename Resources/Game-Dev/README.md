@@ -7,7 +7,7 @@ overview and the player completing the level, unless a specific week states othe
 unedited gameplay — no AI-generated footage, no edits, and no clips taken from social media. Upload the video to
 Google Drive and share the link in the `#submissions` channel.
 
-## Week 1 – Build Your First Playable Level
+## Week 1 – Game Dev Fundamentals (Unity / Unreal / Godot)
 Attention Mentees: This is the first weekly assignment. Create a new Third Person Project in Unreal Engine
 5 and design a simple obstacle course level. Assignments are curated for your own benefit, so complete the
 level and record it yourself.
@@ -25,7 +25,7 @@ level and record it yourself.
 - Moving platform, or
 - Launch pad
 
-## Week 2 – Adding Interactivity with Blueprints
+## Week 2 – C# / C++ for Games
 Build on your obstacle course by adding simple interactivity. Use the Third Person template (Blueprint) again
 and create a new level called SecondLevel. The goal is to introduce Blueprint-driven behaviors and triggers
 — for example, a Trigger Box that fires an event (such as a door opening or a platform moving) when the
@@ -56,7 +56,7 @@ sure the level is fully playable start to finish
 ### Resources
 Unreal Engine Blueprints Playlist: https://www.youtube.com/playlist?list=PLZlv_N0_O1gZTBUZfQy0Am9ucvXpOV6Ii
 
-## Week 3 – Collectibles, Checkpoints & UI
+## Week 3 – Game Design Principles
 Continue using the Third Person (Blueprint) template and create a new level named ThirdLevel. Build a
 small playable level where the player collects items while navigating obstacles, add a checkpoint system so
 the player respawns at the latest checkpoint instead of the start after falling, and display the number of
@@ -91,7 +91,7 @@ work reliably, and the player should always be able to complete the level
 ### Resources
 Unreal Engine Blueprints Playlist: https://www.youtube.com/playlist?list=PLZlv_N0_O1gZTBUZfQy0Am9ucvXpOV6Ii
 
-## Week 4 – Basic Enemy AI
+## Week 4 –  Publishing & Portfolio
 Continue using the Third Person (Blueprint) template and create a new level named FourthLevel. Build a
 small playable level where the player must reach the finish area while avoiding enemy AI, using AI
 Controllers, Nav Mesh, and Pawn Sensing / AI Perception. Treat the level as a stealth or survival challenge
