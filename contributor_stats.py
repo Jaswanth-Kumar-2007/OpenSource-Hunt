@@ -41,7 +41,7 @@ def fetch_contributors(owner, repo):
     return response.json()
 
 
-    def calculate_stats(dict):
+    def calculate_stats(repos):
     """Calculate aggregate statistics from repository data."""
     total_stars = 0
     total_forks = 0
