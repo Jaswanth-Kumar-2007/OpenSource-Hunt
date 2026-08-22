@@ -1,119 +1,39 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="HCF AND LCM OF TWO NUMBERS"/>
-        <attribute name="authors" value="sathv"/>
+        <attribute name="name" value="19)LCM (and hcf)"/>
+        <attribute name="authors" value="Saud"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-08-17 10:14:15 PM"/>
-        <attribute name="created" value="c2F0aHY7U0FUSFZJS19NQU5ORTsyMDI1LTA4LTE1OzAxOjA1OjEwIFBNOzI4MjQ="/>
-        <attribute name="edited" value="c2F0aHY7U0FUSFZJS19NQU5ORTsyMDI1LTA4LTE1OzAxOjM5OjI4IFBNOzI7Mjk0OQ=="/>
-        <attribute name="edited" value="SmFzd2FudGggS3VtYXI7REVTS1RPUC04TDA4SklLOzIwMjUtMDgtMTc7MTA6MTQ6MTUgUE07MjszODA3"/>
+        <attribute name="saved" value="2026-08-22 06:22:01 PM"/>
+        <attribute name="created" value="U2F1ZDtMRU5PVk87MjAyNi0wOC0xMjswNjoyMDowMiBQTTsyMTM5"/>
+        <attribute name="edited" value="U2F1ZDtMRU5PVk87MjAyNi0wOC0yMjswNjoyMjowMSBQTTsyOzIyNTA="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <output expression="&quot;HCM of Two Numbers&quot;" newline="True"/>
-            <output expression="&quot;Enter a&quot;" newline="True"/>
-            <declare name="product" type="Integer" array="False" size=""/>
-            <declare name="a" type="Integer" array="False" size=""/>
-            <input variable="a"/>
-            <output expression="&quot;Enter b&quot;" newline="True"/>
-            <declare name="b" type="Integer" array="False" size=""/>
-            <input variable="b"/>
-            <assign variable="product" expression="a*b"/>
-            <declare name="i" type="Integer" array="False" size=""/>
-            <if expression="a &gt; b">
+            <declare name="A, B, LCM, HCF, i, min" type="Integer" array="False" size=""/>
+            <comment text="LCM * HCF = A*B"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <if expression="A&gt;B">
                 <then>
-                    <for variable="i" start="b" end="1" direction="dec" step="1">
-                        <call expression="remainder(a,i)"/>
-                        <if expression="remainder(a,i) = 0">
-                            <then>
-                                <if expression="b % i = 0">
-                                    <then>
-                                        <output expression="&quot;The HCF of a &amp; b is &quot;&amp;i" newline="True"/>
-                                        <output expression="&quot;The LCM of A and B is &quot;&amp;product/i" newline="True"/>
-                                        <breakpoint expression="" always="True"/>
-                                    </then>
-                                    <else>
-                                        <if expression="i = 1">
-                                            <then>
-                                                <output expression="&quot;The HCF of a &amp; b is 1&quot;" newline="True"/>
-                                                <output expression="&quot;The LCM of A and B is &quot;&amp;product" newline="True"/>
-                                                <breakpoint expression="" always="True"/>
-                                            </then>
-                                            <else/>
-                                        </if>
-                                    </else>
-                                </if>
-                            </then>
-                            <else/>
-                        </if>
-                    </for>
+                    <assign variable="min" expression="B"/>
                 </then>
                 <else>
-                    <if expression="a = b">
-                        <then>
-                            <output expression="&quot;HCF of a &amp; b is &quot;&amp;a" newline="True"/>
-                            <output expression="&quot;The LCM of A and B is &quot;&amp;product/a" newline="True"/>
-                            <breakpoint expression="" always="True"/>
-                        </then>
-                        <else>
-                            <for variable="i" start="a" end="1" direction="dec" step="1">
-                                <call expression="remainder(b,i)"/>
-                                <if expression="remainder(b,i) = 0">
-                                    <then>
-                                        <if expression="a % i = 0">
-                                            <then>
-                                                <output expression="&quot;The HCF of a &amp; b is &quot;&amp;i" newline="True"/>
-                                                <output expression="&quot;The LCM of A and B is &quot;&amp;product/i" newline="True"/>
-                                                <breakpoint expression="" always="True"/>
-                                            </then>
-                                            <else>
-                                                <if expression="i = 1">
-                                                    <then>
-                                                        <output expression="&quot;The HCF of a &amp; b is 1&quot;" newline="True"/>
-                                                        <output expression="&quot;The LCM of A and B is &quot;&amp;product" newline="True"/>
-                                                        <breakpoint expression="" always="True"/>
-                                                    </then>
-                                                    <else/>
-                                                </if>
-                                            </else>
-                                        </if>
-                                    </then>
-                                    <else/>
-                                </if>
-                            </for>
-                        </else>
-                    </if>
+                    <assign variable="min" expression="A"/>
                 </else>
             </if>
-        </body>
-    </function>
-    <function name="remainder" type="Integer" variable="r">
-        <parameters>
-            <parameter name="a" type="Integer" array="False"/>
-            <parameter name="b" type="Integer" array="False"/>
-        </parameters>
-        <body>
-            <declare name="r" type="Integer" array="False" size=""/>
-            <declare name="m" type="Integer" array="False" size=""/>
-            <declare name="q" type="Integer" array="False" size=""/>
-            <assign variable="m" expression="0"/>
-            <assign variable="q" expression="0"/>
-            <while expression="m &lt; a">
-                <assign variable="m" expression="m + b"/>
-                <assign variable="q" expression="q + 1"/>
-                <assign variable="r" expression="a-q*b"/>
-            </while>
-            <if expression="m = a">
-                <then>
-                    <assign variable="r" expression="0"/>
-                </then>
-                <else>
-                    <assign variable="q" expression="a+b-m"/>
-                    <assign variable="r" expression="a-b*q"/>
-                </else>
-            </if>
+            <for variable="i" start="1" end="min" direction="inc" step="1">
+                <if expression="(a%i==0) and (b%i==0)">
+                    <then>
+                        <assign variable="HCF" expression="i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="LCM" expression="(A*B)/HCF"/>
+            <output expression="HCF" newline="True"/>
+            <output expression="LCM" newline="True"/>
         </body>
     </function>
 </flowgorithm>
