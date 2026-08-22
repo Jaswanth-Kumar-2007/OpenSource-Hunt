@@ -21,6 +21,12 @@ def is_valid_password(password):
 
     if not has_lowercase(password):
         return False
+        
+    if not has_uppercase(password):
+        return False
+        
+    if not has_special_character(password):
+        return False
 
     if not has_digit(password):
         return False
