@@ -135,7 +135,7 @@ def main():
         print("Example: python contributor_stats.py OpenLake --top 10")
         sys.exit(1)
     
-    org_name = "OpenLake"
+    org_name = sys.argv[1]
     top_n = 0
     
     if "--top" in sys.argv:
