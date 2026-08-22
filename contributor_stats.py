@@ -73,7 +73,7 @@ def display_stats(stats, org_name):
     print(f"{'='*50}")
     print(f"  Total Repositories : {stats['total_repos']}")
     print(f"  Total Stars        : {stats['total_stars']}")
-    print(f"  Total Forks        : {stats['total_stars']}")
+    print(f"  Total Forks        : {stats['total_forks']}")
     print(f"{'='*50}")
     
     if stats["languages"]:
