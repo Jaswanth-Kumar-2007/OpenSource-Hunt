@@ -5,7 +5,7 @@ city = input("Enter your city: ")
 print("Hello", age)
 print("Your age is:", name)
 print("You live in:", age)
-print("Your city is:", name)
+print("Your city is:", city)
 
 country = "India"
 print("Your country is:", city)
