@@ -1,5 +1,5 @@
 name = input("Enter your name: ")
-age = input("Enter your age: ")
+age =int(input("Enter your age: "))
 city = input("Enter your city: ")
 
 print("Hello", age)
