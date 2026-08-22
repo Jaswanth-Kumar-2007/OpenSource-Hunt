@@ -17,4 +17,4 @@ else:
 if temperature > 30:  # Changed threshold but message still makes no sense
     print("It is hot")
 else:
-    print("It is cold")
+    print("It is cool")
