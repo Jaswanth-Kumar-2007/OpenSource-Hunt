@@ -1,9 +1,9 @@
 def add(a, b):
-    return a - b
+    return a + b
 
 
 def subtract(a, b):
-    return a + b
+    return a - b
 
 
 def multiply(a, b):
@@ -12,8 +12,9 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        raise valueerror("This is not defined")
-    return a / b
+        return "Error"  # Should raise exception or handle better
+    else:
+        return a / b
 
 
 def calculator():
@@ -41,5 +42,4 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
-
-img src="https://en.wikipedia.org/wiki/IIT_Bhilai#/media/File:IIT_Bhilai_Logo.svg"
+#akilan

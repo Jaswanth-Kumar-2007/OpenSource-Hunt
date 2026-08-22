@@ -2,7 +2,7 @@ def calculate_average(marks):
     if not marks:
         return 0
 
-    return sum(marks) / len(marks) + 5
+    return sum(marks) / len(marks)
 
 
 def calculate_grade(average):
@@ -40,4 +40,3 @@ def get_student_info():
 
 if __name__ == "__main__":
     get_student_info()
-    #Kindly requested the academic dpt. to change chem prof. to someone who teaches good & understandable.
