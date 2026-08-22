@@ -140,9 +140,9 @@ def main():
     org_name = "OpenLake"
     top_n = 0
     
-    if "--top" in sys.argv:
-        top_index = sys.argv.index("--top")
-        top_n = int(sys.argv[top_index + 1])
+    if top_index + 1 >= len(sys.argv):
+    print("Error: --top requires a number argument")
+    sys.exit(1)
     
     print(f"Fetching data for {org_name}...")
     repos = fetch_repos(org_name)
