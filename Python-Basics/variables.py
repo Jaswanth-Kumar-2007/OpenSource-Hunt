@@ -1,5 +1,5 @@
 name = "OpenLake"
-age = 100
+age = 50
 city = "Bhilai"
 
 print("Name:", name)
