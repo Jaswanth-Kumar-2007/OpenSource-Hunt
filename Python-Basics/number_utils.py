@@ -9,7 +9,7 @@ def find_max(numbers):
     maximum = numbers[0]
 
     for number in numbers:
-        if number < maximum:  # Bug: this finds minimum, not maximum
+        if number > maximum:  # Bug: this finds minimum, not maximum (Bug fixed.)
             maximum = number
 
     return maximum
@@ -22,7 +22,7 @@ def find_min(numbers):
     minimum = numbers[0]
 
     for number in numbers:
-        if number > minimum:
+        if number < minimum: #bug fixed
             minimum = number
 
     return minimum
