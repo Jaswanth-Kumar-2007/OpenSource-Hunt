@@ -19,7 +19,7 @@ int divide(int a, int b)
 {
     if (b == 0)
     {
-        return 0;  # Magic error code instead of proper handling
+        return "Cannot divide by zero"; 
     }
 
     return a / b;
