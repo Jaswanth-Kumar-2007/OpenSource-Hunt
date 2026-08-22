@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="babup"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-20 09:49:24 PM"/>
+        <attribute name="created" value="YmFidXA7QkhVS1lBUEFWQU47MjAyNi0wOC0yMDswOTo0NDozOSBQTTsyNjQx"/>
+        <attribute name="edited" value="YmFidXA7QkhVS1lBUEFWQU47MjAyNi0wOC0yMDswOTo0OToyNCBQTTsxOzI3NDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the characters to be added&quot;" newline="True"/>
+            <input variable="x"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;len(x)">
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="x" newline="True"/>
+            <output expression="&quot;the string has&quot;&amp;i&amp;&quot;characters&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

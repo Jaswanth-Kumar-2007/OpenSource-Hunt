@@ -2,7 +2,7 @@ def fibonacci(n):
     sequence = []
 
     a = 1
-    b = 1
+    b =1
 
     for _ in range(n):
         sequence.append(a)
@@ -24,3 +24,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+anish

@@ -1,9 +1,9 @@
 def add(a, b):
-    return a - b
+    return a + b
 
 
 def subtract(a, b):
-    return a + b
+    return a - b
 
 
 def multiply(a, b):
@@ -13,7 +13,8 @@ def multiply(a, b):
 def divide(a, b):
     if b == 0:
         return "Error"  # Should raise exception or handle better
-    return a / b
+    else:
+        return a / b
 
 
 def calculator():
@@ -41,3 +42,4 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+#akilan
