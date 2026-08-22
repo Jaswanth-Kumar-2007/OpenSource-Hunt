@@ -2,14 +2,14 @@
 
 int main() {
     int n;
-    int a = 0, b = 1;
+    int a = 1, b = 1;
 
     printf("Enter number of terms: ");
     scanf("%d", &n);
 
     printf("Fibonacci Series: ");
 
-    for (int i = 0; i <= n; i++) {
+    for (int i = 1; i <= n; i++) {
         printf("%d ", a);
 
         int next = a + b;
