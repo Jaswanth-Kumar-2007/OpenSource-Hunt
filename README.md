@@ -347,5 +347,6 @@ OpenSource-Hunt follows the same idea.
 ### Welcome to OpenLake. 🌊
 
 🌐 [openlake.in](https://openlake.in/) · 💻 [github.com/OpenLake](https://github.com/OpenLake) · 📸 [@openlake_iitbhilai](https://www.instagram.com/openlake_iitbhilai/)
+<!-- Already fixed issue #60 -->
 
 **Happy Contributing! 💙**
