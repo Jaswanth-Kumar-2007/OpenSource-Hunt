@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &n);
 
     if (n < 2) {
-        isPrime = 1;
+        isPrime =0;
     }
 
     for (int i = 2; i < n; i++) {
