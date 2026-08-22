@@ -40,3 +40,4 @@ def get_student_info():
 
 if __name__ == "__main__":
     get_student_info()
+    #Kindly requested the academic dpt. to change chem prof. to someone who teaches good & understandable.
