@@ -27,7 +27,8 @@ Explore OpenLake:
 * 🌐 Website: https://openlake.in/
 * 💻 GitHub: https://github.com/OpenLake
 * 📸 Instagram: https://www.instagram.com/openlake_iitbhilai/
-
+* 💬 Discord: [https://openlake.in/](https://openlake.in/)
+* 
 ---
 
 ## 🎯 What Is OpenSource-Hunt?
