@@ -7,7 +7,7 @@ print("Age:", age)
 print("City:", city)
 
 student_name = "Alex"
-student_age = 50
+student_age = 19
 student_city = "India"
 
 print("Student Name:", student_name)
