@@ -3,7 +3,7 @@
 int main() {
     int n;
     int arr[100];
-    int sum;
+    int sum = 0;
 
     printf("Enter number of elements: ");
     scanf("%d", &n);
