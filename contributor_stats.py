@@ -14,7 +14,6 @@ This tool is maintained by OpenLake — IIT Bhilai's Open Source Club.
 
 import requests
 import sys
-import json
 
 
 def fetch_repos(org_name):
