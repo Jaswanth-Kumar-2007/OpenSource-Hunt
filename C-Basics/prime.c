@@ -7,8 +7,12 @@ int main() {
     printf("Enter a number: ");
     scanf("%d", &n);
 
+    if (n==0 || n==1) {
+        isPrime = 0;
+    } else
+
     if (n < 2) {
-        isPrime = 1;
+        isPrime =0;
     }
 
     for (int i = 2; i < n; i++) {

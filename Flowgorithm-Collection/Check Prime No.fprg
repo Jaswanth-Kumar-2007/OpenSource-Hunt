@@ -23,7 +23,7 @@
                     <output expression="&quot;Output &quot;&amp;n&amp;&quot; is Prime Number&quot;" newline="True"/>
                 </then>
                 <else>
-                    <for variable="i" start="2" end="n-1" direction="inc" step="1">
+                    <for variable="i" start="2" end="(n^(0.5))+1" direction="inc" step="1">
                         <if expression="remainder(n,i) = 0">
                             <then>
                                 <output expression="n&amp;&quot; is Not Prime Number&quot;" newline="True"/>
