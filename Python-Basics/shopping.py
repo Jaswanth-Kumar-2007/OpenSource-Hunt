@@ -20,7 +20,7 @@ def calculate_total(cart):
     subtotal = calculate_subtotal(cart)
     discount = calculate_discount(subtotal)
 
-    return subtotal + discount
+    return subtotal - discount
 
 
 def add_item(cart, name, price, quantity):
