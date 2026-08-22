@@ -5,7 +5,7 @@ def add_expense(expenses, name, amount, category):
         "category": category
     })
 
-
+expenses = int(expenses)
 def calculate_total(expenses):
     total = 0
 
