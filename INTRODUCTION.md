@@ -64,5 +64,10 @@ GAME DEV MENTORS:
 - Vaishnavi Atul Patil
 - Shazad Sheik
 ```
+## Future Mentor
+
+```text
+-Parth Phalak
+```
 
 ---
