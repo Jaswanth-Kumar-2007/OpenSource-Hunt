@@ -1,9 +1,9 @@
 def add(a, b):
-    return a - b
+    return a + b
 
 
 def subtract(a, b):
-    return a + b
+    return a - b
 
 
 def multiply(a, b):
@@ -12,8 +12,9 @@ def multiply(a, b):
 
 def divide(a, b):
     if b == 0:
-        raise valueerror("This is not defined")
-    return a / b
+        return "Error"  # Should raise exception or handle better
+    else:
+        return a / b
 
 
 def calculator():
@@ -30,9 +31,9 @@ def calculator():
     if choice == "1":
         print("Result:", add(a, b))
     elif choice == "2":
-        print("Result:", multiply(a, b))
-    elif choice == "3":
         print("Result:", subtract(a, b))
+    elif choice == "3":
+        print("Result:", multiply(a, b))
     elif choice == "4":
         print("Result:", divide(a, b))
     else:
@@ -41,3 +42,4 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+#akilan
