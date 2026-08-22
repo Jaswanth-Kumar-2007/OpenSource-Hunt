@@ -10,7 +10,7 @@ def calculate_total(expenses):
     total = 0
 
     for expense in expenses:
-        total += expense["amount"]
+        total += float(expense["amount"])
 
     return total
 
