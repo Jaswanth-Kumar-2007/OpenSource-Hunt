@@ -19,7 +19,7 @@ int divide(int a, int b)
 {
     if (b == 0)
     {
-        return "undefined"
+        return "Cannot divide by zero"; 
     }
 
     return a / b;
