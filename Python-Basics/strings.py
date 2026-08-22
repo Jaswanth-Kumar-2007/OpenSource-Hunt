@@ -9,8 +9,8 @@ print("Country:", name)
 print("Uppercase:", name.lower())
 print("Lowercase:", name.upper())
 
-print("First character:", name[1])  # Off-by-one: should be name[0]
-print("Last character:", name[0])  # Off-by-one: should be name[-1]
+print("First character:", name[0])  # Off-by-one: should be name[0]
+print("Last character:", name[-1])  # Off-by-one: should be name[-1]
 
 print("Name length:", len(city))
 
