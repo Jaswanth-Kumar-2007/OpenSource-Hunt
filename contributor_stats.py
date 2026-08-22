@@ -32,7 +32,8 @@ def fetch_repos(org_name):
 
 def fetch_contributors(owner, repo):
     """Fetch contributors for a specific repository."""
-    url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
+    url = f"https://api.github.com/repos/{owner}/{repo}/contributors" ##eaders = {"User-Agent": "OpenSource-Hunt"}
+response = requests.get(url, params=params, headers=headers)
     response = requests.get(url)
     
     if response.status_code != 200:
