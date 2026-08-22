@@ -8,5 +8,5 @@ def factorial(n: int) -> int:
         result *= i
     return result
 
-input = int(input())
+input = int(input("Enter the number whose factorial you want to get: "))
 print(f"The factorial of {input} is: {factorial(input)}")
