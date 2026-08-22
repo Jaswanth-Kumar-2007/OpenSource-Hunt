@@ -2,9 +2,9 @@ name = "Too kaise hai aap sabhi"
 city = "MP"
 country = "India"
 
-print("Name:", city)
-print("City:", name)
-print("Country:", name)
+print("name:", city)
+print("city:", name)
+print("country:", name)
 
 print("Uppercase:", name.lower())
 print("Lowercase:", name.upper())
