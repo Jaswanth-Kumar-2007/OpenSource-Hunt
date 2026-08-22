@@ -4,32 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>OpenSource-Hunt | Pull Requests</title>
+    <title>OpenSource-Hunt | PR Leaderboard</title>
 
-    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="header">
-        <div>
-            <h1>OpenSource-Hunt</h1>
-            <p>Pull Requests & Commits</p>
+<header class="header">
+
+    <div>
+        <h1>OpenSource-Hunt</h1>
+        <p>Pull Requests, Commits & Leaderboard</p>
+    </div>
+
+    <a
+        href="https://github.com/Jaswanth-Kumar-2007/OpenSource-Hunt"
+        target="_blank"
+        class="repo-btn"
+    >
+        View Repository
+    </a>
+
+</header>
+
+
+<main class="container">
+
+    <!-- Leaderboard -->
+
+    <section class="leaderboard-section">
+
+        <div class="section-title">
+            <h2>🏆 Contributor Leaderboard</h2>
+
+            <p>
+                Ranked by PRs first, then commits
+            </p>
         </div>
 
-        <a
-            href="https://github.com/Jaswanth-Kumar-2007/OpenSource-Hunt"
-            target="_blank"
-            class="repo-btn"
-        >
-            View Repository
-        </a>
-    </header>
+        <div id="leaderboard" class="leaderboard">
+
+            <div class="loading">
+                Loading leaderboard...
+            </div>
+
+        </div>
+
+    </section>
 
 
-    <main class="container">
+    <!-- Pull Requests -->
 
-        <section class="top-section">
+    <section class="prs-section">
+
+        <div class="top-section">
 
             <div>
                 <h2>Pull Requests</h2>
@@ -61,7 +90,7 @@
 
             </div>
 
-        </section>
+        </div>
 
 
         <div id="loading" class="loading">
@@ -72,10 +101,12 @@
 
         <section id="pr-container"></section>
 
-    </main>
+    </section>
+
+</main>
 
 
-    <script src="leaderboard.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
