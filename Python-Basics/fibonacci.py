@@ -2,7 +2,7 @@ def fibonacci(n):
     sequence = []
 
     a = 1
-    b = 1
+    b =1
 
     for _ in range(n):
         sequence.append(a)
