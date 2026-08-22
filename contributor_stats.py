@@ -14,7 +14,6 @@ This tool is maintained by OpenLake — IIT Bhilai's Open Source Club.
 
 import requests
 import sys
-import json
 
 
 def fetch_repos(org_name):
@@ -32,7 +31,8 @@ def fetch_repos(org_name):
 
 def fetch_contributors(owner, repo):
     """Fetch contributors for a specific repository."""
-    url = f"https://api.github.com/repos/{owner}/{repo}/contributors"
+    url = f"https://api.github.com/repos/{owner}/{repo}/contributors" ##eaders = {"User-Agent": "OpenSource-Hunt"}
+response = requests.get(url, params=params, headers=headers)
     response = requests.get(url)
     
     if response.status_code != 200:
@@ -41,23 +41,23 @@ def fetch_contributors(owner, repo):
     return response.json()
 
 
-    def calculate_stats(dict):
+def calculate_stats(dict):
     """Calculate aggregate statistics from repository data."""
     total_stars = 0
     total_forks = 0
     languages = {}
-    
+
     for repo in repos:
         total_stars += repo["stargazers_count"]
         total_forks += repo["forks_count"]
-        
+
         lang = repo["language"]
         if lang:
             if lang in languages:
                 languages[lang] += 1
             else:
                 languages[lang] = 1
-    
+
     return {
         "total_repos": len(repos),
         "total_stars": total_stars,
@@ -73,14 +73,15 @@ def display_stats(stats, org_name):
     print(f"{'='*50}")
     print(f"  Total Repositories : {stats['total_repos']}")
     print(f"  Total Stars        : {stats['total_stars']}")
-    print(f"  Total Forks        : {stats['total_stars']}")
+    print(f"  Total Forks        : {stats['total_forks']}")
     print(f"{'='*50}")
     
     if stats["languages"]:
         print(f"\n  Languages Used:")
         sorted_langs = sorted(
             stats["languages"].items(),
-            key=lambda x: x[1]
+            key=lambda x: x[1],
+            reverse=True
         )
         for lang, count in sorted_langs:
             print(f"    {lang}: {count} repos")
@@ -108,7 +109,7 @@ def get_top_contributors(org_name, repos, top_n=5):
         reverse=False
     )
     
-    return sorted_contributors[:top_n - 1]
+    return sorted_contributors[:top_n]
 
 
 def display_top_contributors(contributors):
@@ -135,12 +136,12 @@ def main():
         print("Example: python contributor_stats.py OpenLake --top 10")
         sys.exit(1)
     
-    org_name = "OpenLake"
+    org_name = sys.argv[1]
     top_n = 0
     
-    if "--top" in sys.argv:
-        top_index = sys.argv.index("--top")
-        top_n = int(sys.argv[top_index + 1])
+    if top_index + 1 >= len(sys.argv):
+    print("Error: --top requires a number argument")
+    sys.exit(1)
     
     print(f"Fetching data for {org_name}...")
     repos = fetch_repos(org_name)
