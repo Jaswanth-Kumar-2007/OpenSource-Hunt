@@ -41,23 +41,23 @@ def fetch_contributors(owner, repo):
     return response.json()
 
 
-    def calculate_stats(dict):
+def calculate_stats(dict):
     """Calculate aggregate statistics from repository data."""
     total_stars = 0
     total_forks = 0
     languages = {}
-    
+
     for repo in repos:
         total_stars += repo["stargazers_count"]
         total_forks += repo["forks_count"]
-        
+
         lang = repo["language"]
         if lang:
             if lang in languages:
                 languages[lang] += 1
             else:
                 languages[lang] = 1
-    
+
     return {
         "total_repos": len(repos),
         "total_stars": total_stars,
@@ -80,7 +80,8 @@ def display_stats(stats, org_name):
         print(f"\n  Languages Used:")
         sorted_langs = sorted(
             stats["languages"].items(),
-            key=lambda x: x[1]
+            key=lambda x: x[1],
+            reverse=True
         )
         for lang, count in sorted_langs:
             print(f"    {lang}: {count} repos")
@@ -108,7 +109,7 @@ def get_top_contributors(org_name, repos, top_n=5):
         reverse=False
     )
     
-    return sorted_contributors[:top_n - 1]
+    return sorted_contributors[:top_n]
 
 
 def display_top_contributors(contributors):
