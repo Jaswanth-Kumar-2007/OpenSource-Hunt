@@ -3,13 +3,14 @@
 int main() {
     int n;
     int reverse = 0;
+    //edit
 
     printf("Enter a number: ");
     scanf("%d", &n);
 
     while (n > 0) {
         int digit = n % 10;
-        reverse = reverse * 10 + n;
+        reverse = reverse * 10 + digit;
         n /= 10;
     }
 
