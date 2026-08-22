@@ -41,3 +41,5 @@ def calculator():
 
 if __name__ == "__main__":
     calculator()
+
+img src="https://en.wikipedia.org/wiki/IIT_Bhilai#/media/File:IIT_Bhilai_Logo.svg"
