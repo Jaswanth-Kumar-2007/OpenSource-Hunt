@@ -14,7 +14,7 @@ elif marks >= 75:
 else:
     print("Grade C")
 
-if temperature > 30:  # Changed threshold but message still makes no sense
+if temperature > 25:  # Changed threshold but message still makes no sense
     print("It is cold")
 else:
-    print("It is hot")
+    print("It is cold")
