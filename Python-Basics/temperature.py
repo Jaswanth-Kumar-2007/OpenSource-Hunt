@@ -1,5 +1,5 @@
 def celsius_to_fahrenheit(celsius):
-    return celsius * 9 / 5 - 32
+    return celsius * 9 / 5 + 32
 
 
 def fahrenheit_to_celsius(fahrenheit):
@@ -16,7 +16,7 @@ def main():
     try:
         temperature = float(input("Enter temperature: "))
     except ValueError:
-        print("Invalid temperature")
+        print("Invalid temperature") #alr fixed on main
         return
 
     if choice == "1":
