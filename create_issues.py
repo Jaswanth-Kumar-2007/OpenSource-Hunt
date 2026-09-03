@@ -33,8 +33,8 @@ ISSUES.append({
     "labels": ["good first issue", "beginner friendly", "documentation", "easy"],
 })
 ISSUES.append({
-    "title": "[Easy] Fix typo in footer: 'Larn' -> 'Learn'",
-    "body": "## Description\n\nThe footer text in `index.html` line 492 currently reads:\n\n```\nBuild. Larn. Contribute.\n```\n\n***Larn*** is a typo for ***Learn***.",
+    "title": "[Easy] Fix typo in footer: 'Learn' -> 'Learn'",
+    "body": "## Description\n\nThe footer text in `index.html` line 492 currently reads:\n\n```\nBuild. Learn. Contribute.\n```\n\n***Learn*** is a typo for ***Learn***.",
     "labels": ["good first issue", "beginner friendly", "documentation", "easy"],
 })
 ISSUES.append({
