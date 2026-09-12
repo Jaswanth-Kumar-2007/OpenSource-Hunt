@@ -16,7 +16,7 @@ Your mission:
 
 ---
 
-## 🌊 About OpenLake #alr fixed on main 
+## 🌊 About OpenLake
 
 **OpenLake** is IIT Bhilai's hub for Open Source innovation and collaborative development.
 
@@ -25,10 +25,10 @@ The community focuses on building real projects, learning together, and contribu
 Explore OpenLake:
 
 * 🌐 Website: https://openlake.in/
-* 💻 GitHub: https://github.com/OpenLake ## assign github.com
+* 💻 GitHub: https://github.com/OpenLake
 * 📸 Instagram: https://www.instagram.com/openlake_iitbhilai/
-* 💬 Discord: [https://openlake.in/](https://openlake.in/)
-* 
+* 💬 Discord: https://openlake.in/
+
 ---
 
 ## 🎯 What Is OpenSource-Hunt?
